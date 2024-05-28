@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduktion</title>
+</head>
+<body>
+    <button onclick="läggTillElement()">Lägg till</button>
+    <button onclick="taBortElement()">Ta bort</button>
+    <ul id="minLista">
+        <li>Exempel 1</li>
+    </ul>
+
+    <script>
+    function läggTillElement() {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode("Nytt element"));
+        document.getElementById("minLista").appendChild(li);
+    }
+
+    function taBortElement() {
+        let list = document.getElementById("minLista");
+        list.removeChild(list.lastChild);
+    }
+    </script>
+</body>
+</html>

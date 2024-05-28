@@ -1,0 +1,12 @@
+:root {
+    --doneHide: block;
+    --notDoneHide: block;
+}
+
+.done {
+    display: var(--doneHide);
+}
+
+.notDone {
+    display: var(--notDoneHide);
+}
